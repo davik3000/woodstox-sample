@@ -21,7 +21,10 @@ public class Main {
 
     public void execute(String[] args) {
         if (args.length > 0) {
+            String filePath = args[0];
 
+            Processor p = new Processor();
+            p.testEventReaderWriter(filePath, "http://dummy.org/2.0", "tag2", filePath + ".output.xml");
         }
     }
 
