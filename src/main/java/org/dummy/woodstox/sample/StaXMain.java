@@ -5,15 +5,12 @@
  */
 package org.dummy.woodstox.sample;
 
-import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.io.OutputStream;
-import java.io.StringWriter;
 import javax.xml.XMLConstants;
 import javax.xml.namespace.NamespaceContext;
 import javax.xml.namespace.QName;
@@ -24,15 +21,11 @@ import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLOutputFactory;
 import javax.xml.stream.XMLStreamConstants;
 import javax.xml.stream.XMLStreamException;
-import javax.xml.stream.XMLStreamReader;
 import javax.xml.stream.events.StartElement;
 import javax.xml.stream.events.XMLEvent;
-import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerConfigurationException;
 import javax.xml.transform.TransformerException;
-import javax.xml.transform.TransformerFactory;
-import javax.xml.transform.stax.StAXSource;
-import javax.xml.transform.stream.StreamResult;
+import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 /**
@@ -41,7 +34,7 @@ import org.apache.logging.log4j.Logger;
  */
 public class StaXMain {
 
-    private static final Logger LOG = org.apache.logging.log4j.LogManager.getLogger();
+    private static final Logger LOG = LogManager.getLogger();
 
     private static void testEventReaderWriter(String xmlInputPath,
             String xmlMatchingNamespaceUri,
