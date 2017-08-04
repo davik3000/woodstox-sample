@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns="http://dummy.org/1.0" xmlns:ns1="http://dummy.org/2.0">
+  <ns1:tag1>1</ns1:tag1>
+  <ns1:tag2>A</ns1:tag2>
+  <ns1:tag1>2</ns1:tag1>
+  <ns1:tag2>B</ns1:tag2>
+</root>
